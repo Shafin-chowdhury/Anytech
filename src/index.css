@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Syne:wght@400..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+    .pushable{
+        background:  hsl(30, 83%, 45%);
+        border-radius: 2px;
+        border: none;
+        position: relative;
+        color:white;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px 40px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0,0.12);
+        cursor: pointer;
+        outline-offset: 2px;
+}
+
+.front{
+    display: block;
+    padding: 10px 40px;
+    border-radius: 2px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translateY(-6px);
+}
+}
