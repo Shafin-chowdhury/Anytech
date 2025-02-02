@@ -1,19 +1,20 @@
 import React from "react";
 import { FaGlobe } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
   return (
     <nav className="w-full bg-gradient-to-r from-blue-800 to-blue-400 p-4 shadow-md">
-      <div className="container mx-auto flex items-center justify-between px-4 md:px-16, lg:px-24 py-4">
+      <div className="container  mx-auto flex items-center justify-between px-4 md:px-16 lg:px-24 py-4">
         
-        {/* Logo */}
+        
         <div className="text-3xl font-bold text-white">ANYTECH</div>
 
-        {/* Navigation Links */}
+        
         <ul className="flex space-x-12 text-white   text-lg">
           
-          {/* Solutions Dropdown */}
+          
           <li className="relative group ">
             <button className="hover:opacity-80 ">Solutions ▼</button>
             <ul className="absolute left-0 mt-2 hidden group-hover:block bg-white dark:bg-gray-700 rounded-lg shadow-lg w-44">
@@ -81,11 +82,12 @@ const Navbar = () => {
 
         {/* Language and Contact Button */}
         <div className="flex items-center space-x-8">
-         
-          <button className="px-8 py-4   font-bold text-xl border rounded-lg text-white hover:bg-white hover:text-blue-600 transition">
-            Contact Us →
-          </button>
-        </div>
+      <Link to="/contact">
+        <button className="px-8 py-4 font-bold text-xl border rounded-lg text-white hover:bg-white hover:text-blue-600 transition">
+          Contact Us →
+        </button>
+      </Link>
+    </div>
 
       </div>
     </nav>

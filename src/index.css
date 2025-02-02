@@ -5,6 +5,49 @@
 @tailwind utilities;
 
 
+.Navber {
+   nav {
+  width: 100%;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu {
+    display: flex;
+    
+  }
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+  .navbar-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    gap: 8px;
+  }
+
+  .navbar-button {
+    width: 100%;
+  }
+}
+  }
+  
+  @media (max-width: 768px) {
+    .Navber {
+      /* Adjust navbar styles for small screens */
+    }
+  }
+
+
 @layer utilities{
     .pushable{
         background:  hsl(30, 83%, 45%);
@@ -29,4 +72,41 @@
     font-family: Arial, Helvetica, sans-serif;
     transform: translateY(-6px);
 }
+
+.pushable:active .front{
+    transform: translateY(-2px);
+}
+
+.Background1 {
+    animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.Background2 {
+    animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}  
 }

@@ -38,7 +38,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        wrapperBg: "url('/src/assets/background/backgrounds/WaveLinesDesktop1.svg')",
+        wrapperBg: "url('/src/assets/background/backgrounds/WaveLinesDesktop4.svg')",
       },
       container: {
         screens: {
